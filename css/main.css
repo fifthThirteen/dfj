@@ -1,0 +1,87 @@
+.img_banner {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+.img_box {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+.img_box ul {
+	position: absolute;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow:row nowrap;
+	overflow: hidden;
+	transition:left 2s;
+	-moz-transition:left 2s; /* Firefox 4 */
+	-webkit-transition:left 2s; /* Safari and Chrome */
+	-o-transition:left 2s; /* Opera */
+}
+.list_box {
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.5);
+}
+.list_box ul {
+	width: 1200px;
+    height: 100px;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content:flex-end;
+	align-items:center;
+	align-content:center;
+}
+.list_box ul li {
+	position: relative;
+	margin-left: 15px;
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+.list_box ul li span {
+	display: block;
+    width: 100px;
+    height: 60px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.list_box ul li.on span {
+	background: rgba(0,0,0,0);
+}
+.img_banner .arrow { 
+	cursor: pointer; 
+	/*display: none; */
+	line-height: 80px; 
+	text-align: center; 
+	font-size: 36px; 
+	font-weight: bold; 
+	width: 80px; 
+	height: 80px;  
+	position: absolute; 
+	z-index: 2; 
+	top: 230px; 
+	background-color: RGBA(0,0,0,.3); color: #fff;
+}
+.arrow:hover {
+	background-color: RGBA(0,0,0,.7);
+	text-decoration: none;
+}
+#img_banner:hover .arrow { 
+	/*display: none;*/
+}
+#prev { 
+	left: 20px;
+}
+#next { 
+	right: 20px;
+}
