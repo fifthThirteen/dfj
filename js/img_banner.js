@@ -1,4 +1,8 @@
 window.onload = function(){
+
+	// 设置有滚动条时的屏幕宽度和无滚动条时的屏幕宽度一致
+	document.body.style.width = window.screen.width;
+
 	var img_banner = document.getElementById("img_banner");
 	var img_list = document.getElementById("img_list");
 	var buttons = document.getElementById("buttons").getElementsByTagName('li');

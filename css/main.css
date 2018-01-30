@@ -1,3 +1,9 @@
+section {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background-color: #FFF;
+}
 .img_banner {
 	position: relative;
 	width: 100%;
@@ -60,7 +66,7 @@
 }
 .img_banner .arrow { 
 	cursor: pointer; 
-	/*display: none; */
+	display: none; 
 	line-height: 80px; 
 	text-align: center; 
 	font-size: 36px; 
@@ -77,11 +83,178 @@
 	text-decoration: none;
 }
 #img_banner:hover .arrow { 
-	/*display: none;*/
+	display: none;
 }
 #prev { 
 	left: 20px;
 }
 #next { 
 	right: 20px;
+}
+/*热搜*/
+.hotword {
+	margin: 0 auto;
+	width: 1200px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+	height: 50px;
+	line-height: 50px;
+	align-items:center;
+	/*align-content:center;*/
+}
+.hotword > div {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+}
+.hotword ul {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+}
+.hotword ul li {
+	margin-left: 20px;
+}
+.hotword ul li a {
+	font-family: "siyuan";
+	color: #212121;
+	font-size: 14px;
+}
+.hotword ul li a:hover {
+	color: #ee450a;
+	text-decoration: underline;
+}
+.hot_item a {
+	color: #ee450a !important;
+	text-decoration: underline;
+}
+.hot_item span {
+	display: inline-block;
+    vertical-align: middle;
+    /*margin-left: 5px;*/
+    width: 15px;
+    height: 18px;
+    background: url(../img/index.png) -10px -64px no-repeat;
+}
+.hotword > span {
+    width: 30px;
+    height: 22px;
+    background: url(../img/index.png) -10px -10px no-repeat;
+}
+section.business_spot {
+	background-color: #f6f6f6;
+}
+.item_list {
+	width: 1200px;
+	height: 140px;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+}
+.item {
+	width: 240px;
+	position: relative;
+	cursor: pointer;
+}
+.item_title {
+	position: relative;
+	height: 140px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content:flex-start;
+	align-items:center;
+	align-content:center;
+	opacity: 1;
+}
+.item_title span:nth-child(2) {
+	margin-left: 10px;
+	margin-top: -10px;
+}
+.item_title span:last-child {
+	position: absolute;
+	top: 75px;
+	margin-left: 90px;
+}
+
+.item_icon {
+	display: inline-block;
+	background-image: url(../img/index.png);
+	width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+.rent_item .item_icon {
+	background-position: -180px -10px;
+}
+.hotel_item .item_icon {
+	background-position: -90px -10px;
+}
+.service_item .item_icon {
+	background-position: -270px -10px;
+}
+.experi_item .item_icon {
+	background-position: -450px -10px;
+}
+.product_item .item_icon {
+	background-position: -360px -10px;
+}
+.title_text_1 {
+	font-size: 20px;
+}
+.title_text_2 {
+	font-size: 16px;
+	color: #bdbdbd;
+}
+.item_text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 190px;
+	padding: 0 25px;
+	text-align: left;
+	background: linear-gradient(to left,#4daf50,#8bc34a);
+	background: -webkit-linear-gradient(to left,#4daf50,#8bc34a);
+	background: -webkit-linear-gradient(right,#4daf50,#8bc34a);
+	background: -moz-linear-gradient(to left,#4daf50,#8bc34a);
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#8bc34a,endcolorstr=#4daf50,gradientType=1);
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+}
+.text_content {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+}
+.item:hover .item_text{
+	height:90px;
+	/*height:0\9\0;*/
+	padding:25px;
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+}
+.item:hover .item_title{
+	opacity:0;
+	transition:opacity 0.2s linear;
+	-webkit-transition:opacity 0.2s linear;
+	-moz-transition:opacity 0.2s linear;
+}
+.item:hover .text_content{
+	opacity:1;
+	transition:all 0.5s linear;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
 }
