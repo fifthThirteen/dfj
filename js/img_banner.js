@@ -18,27 +18,14 @@ window.onload = function(){
         if (offset == 0) {
             return;
         }
-  //       animated = true;
-		// var time = 300; //位移总时间
-		// var interval = 10; //位移间隔时间
-		// var speed = offset/(time/interval); //每次位移量
 		var newLeft = parseInt(img_list.style.left) + offset;
-		// function go() {
-		// 	if ( (speed < 0 && parseInt(img_list.style.left) > newLeft) || (speed > 0 && parseInt(img_list.style.left) < newLeft)) {
-		// 		img_list.style.left = parseInt(img_list.style.left) + speed + 'px';
-		// 		setTimeout(go,interval);
-		// 	} else {
-				img_list.style.left = newLeft + 'px';
-				if (newLeft < -(1920*(length-1))) {
-					img_list.style.left = 0 + 'px';
-				}
-				if (newLeft > 0) {
-					img_list.style.left = -(1920*(length-1)) + 'px';
-				}
-  //       		animated = false;
-		// 	}
-		// }
-		// go();
+		img_list.style.left = newLeft + 'px';
+		if (newLeft < -(1920*(length-1))) {
+			img_list.style.left = 0 + 'px';
+		}
+		if (newLeft > 0) {
+			img_list.style.left = -(1920*(length-1)) + 'px';
+		}
 	}
 
 
