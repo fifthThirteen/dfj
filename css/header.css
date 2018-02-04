@@ -3,8 +3,8 @@ body {
 }
 header {
 	width: 100%;
-    height: 40px;
-    line-height: 40px;
+    /*height: 40px;
+    line-height: 40px;*/
     background: #404040;
 }
 header .header_top {
@@ -23,7 +23,7 @@ header .header_top {
 	align-items:center;
 	align-content:center;
 }
-header .header_top > div:nth-of-type(1),header .header_top > div:nth-of-type(2) {
+.header_top_weather {
 	margin-right: 30px;
     cursor: pointer;
 }
@@ -34,6 +34,177 @@ header span , header a {
 	color: #fff;
     font-size: 14px;
 }
+
+
+/*  天气样式开始 */
+.nav_icon .nav_icon_11{
+	position:absolute;
+}
+.nav_icon div a{
+	display:block;		
+	width:100px;
+	padding-top:30px;
+	height:160px;
+}
+.nav_icon_11 .Icontitle{
+	opacity:1;
+	position:absolute;
+	left:0;
+	top:0;		
+}
+
+.future_weather:hover .threedays{		
+	height:190px;
+	height:0\9\0;
+	transition:height .5s linear;
+	-webkit-transition:height .5s linear;
+	-moz-transition:height .5s linear;
+}
+
+
+.nav_icon .nav_icon_11 .tomorrow{		
+	width:79px;
+	height:170px;
+	
+}
+
+.nav_icon_11 .threedays{
+	position:absolute;
+	top:10px;
+	z-index:999;
+	width:300px;	
+	height:0;
+	color:#fff;
+	background:url(../img/bgm.jpg);			
+	overflow:hidden;
+	transition:height .5s linear;
+	-webkit-transition:height .5s linear;
+	-moz-transition:height .5s linear;
+}
+
+.threedays ul li span{
+	margin:0;
+	padding:0;
+}
+.threedays ul li{
+	float:left;
+	text-align:center;
+}
+.threedays ul:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.threedays .today{
+	width:120px;
+	height:170px;
+	padding:10px;
+	padding-top:5px;
+}
+.today .todayIcon{
+	display:inline-block;
+	width:80px;
+	height:80px; 
+	background:url(../img/06.png) center center no-repeat;	
+	
+}
+.today .tempBox{
+	display:inline-block;
+	margin-top:-5px;
+	margin-left:15px;
+	height:48px;
+	width:120px;
+	text-align:left;	
+}
+.today .tempBox .temp{
+	display:inline-block;
+	vertical-align:middle;
+	height:48px;
+	width:52px;
+	font-size:48px;
+	font-family:Arial;
+}
+.today .tempBox .tempText{
+	display:inline-block;
+	vertical-align:middle;
+	width:32px;
+	padding-top:2px;
+	margin-left:5px;
+	height:38px;
+			
+}
+.tempBox .tempText:after{
+	content:"";
+	display:inline-block;
+	clear:both;
+}
+.tempBox .tempText span{
+	float:left;
+	display:inline-block;
+	width:32px;
+}
+.tempBox .tempText .tempIcon{
+	font-size:18px;
+	height:20px;
+}
+.tempBox .tempText .intime{
+	font-size:14px;
+	height:16px;
+	clear:left;
+}
+.today .tempValue{
+	margin-top:10px;
+	text-align:center;
+	font-size:14px;
+}
+.threedays .today .weather{
+	display:block;
+	width:120px;
+	font-size:14px;
+	text-align:center;
+	height:16px;
+	
+}
+.threedays .future{
+	
+	width:79px;
+	height:150px;
+	text-align:center;
+	margin-top:20px;
+	border-left:1px solid #70bf73;
+}
+.threedays .future .day{
+	display:inline-block;
+	width:80px;
+	height:18px;
+	font-size:14px;
+	text-align:center;			
+}
+
+.threedays{
+	text-shadow:0 2px 1px rgba(0,0,0,.2);
+}
+.threedays .future .dayTemp{
+	margin-top:15px;
+}
+.threedays .future .date{
+	margin-top:10px;	
+	color:#add8b5;
+	text-shadow:none;
+}
+.threedays .future .icon{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	margin-top:6px;
+	background:url(../img/013.png) center center no-repeat;
+	background-position:center center;
+}
+/* 天气样式结束 */
+
+
+
+
 .about {
 	position: absolute;
 	right: 0;

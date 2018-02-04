@@ -20,10 +20,51 @@
 <body>
 <header>
 	<div class="header_top">
-		<div class="header_top_weather">
+		<!-- <div class="header_top_weather">
 			<span>晴转多云</span>
 			<span>16~25℃</span>
-		</div>
+		</div> -->
+	    <div class="header_top_weather daily_forecast future_weather">
+        	<span class="cond">晴转多云</span> 
+        	<span class="temp">16~25℃</span>  
+<!--         	近日天气开始 -->
+			<div class="nav_icon">
+		    	<div class="nav_icon_11">
+		        	<div class="threedays">
+		            	<ul class="weather_box">
+		            		<li class="today">
+		            			<span class="todayIcon"></span>
+		            			<div class="tempBox">
+		            				<span class="temp">33</span>
+		            				<span class="tempText">
+		            					<span class="tempIcon">℃</span>
+		            					<span class="intime">实时</span>
+		            				</span>
+		            			</div>            			
+		            			<div class="tempValue">27~34℃</div>
+		            			<div class="weather">多云</div>
+		            		</li>
+		            		<li class="future tomorrow">
+		            			<span class="day date1">周四</span>
+		            			<span class="day date">07月27日</span>
+		            			<span class="icon tomorrowIcon"></span>
+		            			<span class="day dayTemp">27~34℃</span>
+		            			<span class="day dayWeather">多云</span>
+		            		</li>
+		            		<li class="future tomorrow">
+		            			<span class="day date1">周五</span>
+		            			<span class="day date">07月28日</span>
+		            			<span class="icon tomorrowIcon"></span>
+		            			<span class="day dayTemp">26~32℃</span>
+		            			<span class="day dayWeather">雷阵雨</span>
+		            		</li>
+		            	</ul>
+		            </div>  
+	            </div>
+            </div>
+<!-- 近日天气结束 -->
+	    </div>
+
 		<div class="header_top_city">
 			<span class="current_city">深圳</span>
 			<span class="change_city">【切换城市】</span>
@@ -548,7 +589,7 @@
 	            <span class="copyRight">Copyright©2017  dfj95.com , All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="http://www.miitbeian.gov.cn" class="beian" target="_blank">粤ICP备16037344号</a></span>
 	            <div class="address">                    
 	            <span class="webDataBox">深圳鼎丰居置业服务有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址：深圳南山区海岸城天利中央商务广场B座2901B</span>
-	            <a class="webData"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1264431606'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264431606%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></a>
+	            <!-- <a class="webData"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1264431606'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1264431606%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></a> -->
 				</div>
 	        </div>
 	    </div>
@@ -556,6 +597,7 @@
 </footer>
 <script src="js/unslider.js"></script>
 <script src="js/img_banner.js"></script>
+<script scr="js/weather.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
